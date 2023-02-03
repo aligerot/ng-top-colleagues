@@ -3,15 +3,7 @@ import {CollegueComponent} from "../collegue/collegue.component";
 import {LikeHate} from "../../models/like-hate";
 @Component({
   selector: 'tc-like-hate',
-  template: `
-    <button (click)="LikeCollegue()" [disabled]=boutonDisableLike >j'aime</button>
-    <button (click)="HateCollegue()" [disabled]="boutonDisableHate">je déteste</button>
-
-
-
-
-
-  `
+  templateUrl: "like-hate.component.html"
 })
 export class LikeHateComponent {
 
