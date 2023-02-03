@@ -5,7 +5,7 @@ import {LikeHate} from "../../models/like-hate";
   selector: 'tc-like-hate',
   template: `
     <button (click)="LikeCollegue()" [disabled]=boutonDisableLike >j'aime</button>
-    <button (click)="HateCollegue()">je déteste</button>
+    <button (click)="HateCollegue()" [disabled]="boutonDisableHate">je déteste</button>
 
 
 
