@@ -1,4 +1,4 @@
 export enum LikeHate {
-  like,
-  hate,
+  LIKE=100,
+  HATE=-100,
 }
