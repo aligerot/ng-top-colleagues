@@ -1,0 +1,9 @@
+<div class="collegue" ><h2>collegue</h2>
+<img src="{{collegue.photo}}" alt="photo">
+<div  class="highlight"> <p>{{ collegue.pseudo | uppercase}}</p>
+<p>score= {{collegue.score | score }}</p></div>
+
+
+<tc-like-hate (aimeOuPas)="newScore($event)"    [boutonDisableLike]="disabledLike"   [boutonDisableHate]="disabledHate"></tc-like-hate>
+
+</div>
