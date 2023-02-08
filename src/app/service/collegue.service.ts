@@ -2,7 +2,8 @@ import { HttpClient, HttpResponse } from "@angular/common/http";
 import {Colleague} from "../shared/models/colleague";
 import {Observable, Subscription} from "rxjs";
 import {Injectable} from "@angular/core";
-// (...)
+import {CreateColleagueFormsComponent} from "../shared/create-colleague-forms/create-colleague-forms.component";
+import {ColleguePost} from "../shared/models/colleguePost";
 
 
 
@@ -24,4 +25,10 @@ export class CollegueService {
    return this.http.get<Colleague[]>(Url_api)
 
 
-  }}
+  }
+
+  postCollegue(newCollegue:ColleguePost){
+    this.http.post(Url_api,newCollegue).subscribe();
+  }
+
+}

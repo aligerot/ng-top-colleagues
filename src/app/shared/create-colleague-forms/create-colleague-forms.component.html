@@ -1,0 +1,11 @@
+
+
+<p class="pseudo">pseudo
+  <input  type="text" id="pseudo" [(ngModel)]="newCollegue.pseudo"></p>
+<p class="nom">nom
+  <input type="text" id="nom" [(ngModel)]="newCollegue.last"></p>
+<p class="prenom">prenom
+  <input type="text" id="prenom" [(ngModel)]="newCollegue.first"></p>
+<p class="photoPost">photo
+  <input  type="text" id="photo" [(ngModel)]="newCollegue.photo"></p>
+<button  class="btn btn-primary" (click)="postColleague()">Envoyer</button>
