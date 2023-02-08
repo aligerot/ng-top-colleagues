@@ -2,12 +2,15 @@ import {Component, Input, NgModule} from '@angular/core';
 import {Colleague} from "../../models/colleague";
 import {LikeHate} from "../../models/like-hate";
 import {elementAt} from "rxjs";
+import {BrowserModule} from "@angular/platform-browser";
 
 @Component({
   selector: 'tc-collegue',
     templateUrl: './collegue.component.html'
 
 })
+
+
 
 export class CollegueComponent {
  @Input() collegue: Colleague = {
